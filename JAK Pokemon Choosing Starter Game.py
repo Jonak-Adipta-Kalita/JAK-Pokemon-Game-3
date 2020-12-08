@@ -1,3 +1,6 @@
+print("$"*10, "WELCOME TO JAK Pokemon Game", "$"*10)
+print(" ")
+
 choose_a = ["A", "a"]
 choose_b = ["B", "b"]
 choose_c = ["C", "c"]
@@ -154,11 +157,6 @@ def Galar():
         Galar()
 
 def main():
-    print("$"*10, "WELCOME TO JAK Pokemon Game", "$"*10)
-    print(" ")
-    print("$"*14, "Choose You Starter", "$"*15)
-    print(" ")
-    print(" ")
     print("Which region you want to go with??")
     print()
     region()
@@ -183,5 +181,12 @@ def main():
     else:
         print("Choose a valid Region")
         region()
+    print("Do you want to play again??")
+    choose_start = input(">> ")
+    print()
+    if choose_start == "Yes":
+        main()
+    elif choose_start == "No":
+        exit
 
 main()
